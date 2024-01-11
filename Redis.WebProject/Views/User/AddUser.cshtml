@@ -1,0 +1,23 @@
+﻿@using Redis.Cache.Entities
+
+
+
+@model User
+
+
+<div class="card-body" >
+   <form asp-action="AddUser" method="post">
+       <div class="form-group">
+           <label asp-for="FirstName"></label>
+           <input asp-for="FirstName" type="text" class="form-control" />
+       </div>
+        <div class="form-group">
+            <label asp-for="LastName"></label>
+            <input asp-for="LastName" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+           
+            <input type="submit" value="ekle" class="btn btn-success"/>
+        </div>
+   </form>
+</div>
